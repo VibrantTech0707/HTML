@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .con{
+            height: 240px;
+            width: 400px;
+            background: url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg');
+            margin: 0 auto;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            background-position: -40px 0;
+        }
+        .newarrival{
+            height: 210px;
+            width: 370px;
+            border: 5px solid white;
+            color: white;
+            font-weight: bold;
+            padding: 150px 0 0 270px;
+            /* box-shadow: 0 0 10px black; */
+            /* opacity: 0; */
+            margin-left: -20px;
+            opacity: 0;
+            transition: 0.3s;
+        }
+        .con:hover .newarrival{
+            margin-left: 0;
+            opacity: 1;
+        }
+        .con:hover{
+            background-position: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="newarrival">New Arrival</div>
+    </div>
+</body>
+</html>
